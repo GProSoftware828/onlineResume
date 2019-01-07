@@ -1,0 +1,11 @@
+<div>
+  <div class="card">
+    <h4>Blogs beginning from previous personal website and continuing from this website:</h4>
+    <%= link_to 'New', new_blog_url %>
+    <%= source_helper("alert alert-warning") %>
+    <div class="blog-group">
+      <div class=" row <%= "sortable" if logged_in?(:site_admin) %>">
+        <%= render @blogs %>
+      </div>
+  </div>
+</div>

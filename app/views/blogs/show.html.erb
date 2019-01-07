@@ -1,0 +1,16 @@
+<div class="blog-show">
+  <%= link_to 'Back', blogs_path %>
+  <%= link_to 'Edit', edit_blog_url %>
+  <div class="card">
+
+    <h2><%= @blog.title %></h2>
+
+    <%= @blog.body %>
+
+    <%= render 'comments/comment_form' %>
+
+    <div id="comments" data-blog-id="<%= @blog.id %>">
+      <%= render @blog.comments %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="comment-card">
+  <div class="card">
+    <div class="card-bock">
+      <div class="row">
+
+        <div class="col-md-2" style="marginRight: 10px;">
+          <%= gravatar_helper comment.user %>
+        </div>
+
+        <div class="col-md-10">
+          <div>
+            <%= comment.content %>
+          </div>
+
+          <div class="comment-attribution">
+            Comment posted by <%= comment.user.first_name %> <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago
+          </div>
+        </div>
+      </div>
+    <div>
+  </div>
+</div>

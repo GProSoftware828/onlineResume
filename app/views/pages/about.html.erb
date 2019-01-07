@@ -1,0 +1,73 @@
+<div class="app-card-container">
+  <div class="card">
+    <div class="skill">
+      <%= image_tag "computer_code.jpg", width: '78%', alt: "Image still loading", class: "about-img" %>
+    </div>
+    <div class="skill">
+      <h2>Percentage of Abilities - Each Skill</h2>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="skills">
+        <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %></h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+              ></div>
+            </div>
+          </div>
+        <% end %>
+        <p>
+        "I am a diversified computer programmer and knowledgable software developer. Over the course of three years I have covered the spectrum of deeply studying and applying the languages of website applications as well as computing languages such as C++."
+        </p><p>
+        "My projects have focused on developing software for the social integration of novel writers and their books in the form of a Ruby on Rails application designed to be a monetized social media platform for writers, encompassing special features such as my invention of a C++ program to give their books maturity ratings upon pdf upload." 
+        </p><p>
+        "The demands of my first programming job gave broad JavaScript and other full stack skills. This overall understanding makes me a reliable and hardworking computer programmer."
+        </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#resume"
+              aria-expanded="false"
+              aria-controller="resume"
+          >
+          Resume (Please click and Scroll Down)
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="resume">
+            <div class="card-block">
+              <h2>Hummingbird</h2><br/>
+              <p>2012-2018</p><br/>
+              <p>C++ maturity rating scan for books, experiments in Ruby and JavaScript</p>
+              <p>Large software development phase 2012-2016 = 2.5 second performance (each book scan)</p>
+            </div>
+            <div class="card-block">
+              <h2>Narrati√</h2><br/>
+              <p>2016-2018</p><br/>
+              <p>Rails app for novelists- a monetized social media platform,</p>
+              <p>professional project in development for sale to investors</p>
+            </div>            
+            <div class="card-block">
+              <h2>Internet Builder Consultants</h2><br/>
+              <p>2016</p><br/>
+              <p>Worked under senior developer for website application</p>
+              <p>Platform was ASP with MySQL, PHP, VBScript, JavaScript, others</p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

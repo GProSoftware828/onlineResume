@@ -1,0 +1,9 @@
+<div>
+  <div class="portfolio-index">
+    <%= source_helper("alert alert-warning") %>
+    <div>
+      <div class=" row <%= "sortable" if logged_in?(:site_admin) %>">
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </div>
+  </div>
+</div>

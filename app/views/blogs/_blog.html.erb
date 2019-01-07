@@ -1,0 +1,9 @@
+<div class="blog-post">
+  <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
+
+  <%= render partial: 'blogs/admin_actions', locals: {blog: blog} %>
+
+  <p>
+    <%= blog.body %>
+  </p>
+</div>
