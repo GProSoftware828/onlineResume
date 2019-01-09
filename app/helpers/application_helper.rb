@@ -28,7 +28,7 @@ module ApplicationHelper
       },
       {
         url: about_me_path,
-        title: 'About Me'
+        title: 'Resume'
       },
       {
         url: contact_path,
@@ -36,11 +36,11 @@ module ApplicationHelper
       },
       {
         url: blogs_path,
-        title: 'Blog'
+        title: 'Blog Samples'
       },
       {
         url: portfolios_path,
-        title: 'Portfolio'
+        title: '13 Diverse Code Samples'
       }
     ]
   end
