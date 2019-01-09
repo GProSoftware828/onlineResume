@@ -1,12 +1,45 @@
-<div>
-  <div class="title-style">
-    <h3>Most of these are availabe at my Repl.it profile via the link in the "Contact" section (sometimes Heroku doesn't load the images)</h3>
-  </div>
-  <div class="portfolio-index">
+
     <%= source_helper("alert alert-warning") %>
-    <div>
-      <div class=" row <%= "sortable" if logged_in?(:site_admin) %>">
-      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    <div>    
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/4"><%= image_tag "RubySearch.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/1"><%= image_tag "CPortfolio.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/2"><%= image_tag "FileZilla.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/3"><%= image_tag "jQueryAlert.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/5"><%= image_tag "LodashComments.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/6"><%= image_tag "JSXTags.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/7"><%= image_tag "ConditionalShare.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/8"><%= image_tag "CSS3.jpg", width: '78%', alt: "code", class: "about-img" %></a> 
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/9"><%= image_tag "easyHTTP.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/10"><%= image_tag "Python.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/11"><%= image_tag "Handlebars.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/12"><%= image_tag "Coffeescript.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
+      <div class="grid">
+        <a href="https://gp-online-resume.herokuapp.com/portfolio/13"><%= image_tag "OLAPPatentFlowChart.jpg", width: '78%', alt: "code", class: "about-img" %></a>
+      </div>
     </div>
   </div>
 </div>
