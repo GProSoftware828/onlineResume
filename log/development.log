@@ -55968,3 +55968,540 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+Started GET "/" for 127.0.0.1 at 2019-01-07 19:43:32 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__275682270846703640_70142725282600 at /Users/georgie/Desktop/portfolio/app/views/layouts/application.html.erb:13)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__275682270846703640_70142725282600 at /Users/georgie/Desktop/portfolio/app/views/layouts/application.html.erb:13)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__275682270846703640_70142725282600 at /Users/georgie/Desktop/portfolio/app/views/layouts/application.html.erb:13)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__275682270846703640_70142725282600 at /Users/georgie/Desktop/portfolio/app/views/layouts/application.html.erb:13)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__275682270846703640_70142725282600 at /Users/georgie/Desktop/portfolio/app/views/layouts/application.html.erb:13)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/georgie/.rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__275682270846703640_70142725282600 at /Users/georgie/Desktop/portfolio/app/views/layouts/application.html.erb:13)
+  Rendered shared/_nav.html.erb (31.5ms)
+Completed 200 OK in 10740ms (Views: 10723.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolios" for 127.0.0.1 at 2019-01-07 19:43:48 +1100
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (7.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (23.8ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 291ms (Views: 272.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/portfolios" for 127.0.0.1 at 2019-01-07 19:43:48 +1100
+Started GET "/fonts/Lato-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:43:48 +1100
+Processing by PortfoliosController#index as HTML
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Lato-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (5.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (9.2ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (19.9ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.6ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (178.1ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 626ms (Views: 622.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/Lato-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:43:49 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Lato-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (12.4ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.9ms)
+Started GET "/portfolio/1" for 127.0.0.1 at 2019-01-07 19:43:54 +1100
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (25.2ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 204ms (Views: 196.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/fonts/RobotoSlab-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:43:54 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/RobotoSlab-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (14.5ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.8ms)
+Started GET "/login" for 127.0.0.1 at 2019-01-07 19:44:16 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (38.3ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 216ms (Views: 213.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-01-07 19:44:17 +1100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 208ms (Views: 207.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-01-07 19:44:47 +1100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J8PPV573h0TAbHVP+HaLpRuxY3/sYl4ItEsZgcExIxXnO16LGMcmWY8NYt5l3+gh7rR7UVWa6g48FsqWcCRJpg==", "user"=>{"email"=>"adminfake1@outlook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adminfake1@outlook.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J8PPV573h0TAbHVP+HaLpRuxY3/sYl4ItEsZgcExIxXnO16LGMcmWY8NYt5l3+gh7rR7UVWa6g48FsqWcCRJpg==", "user"=>{"email"=>"adminfake1@outlook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 349ms (Views: 205.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-01-07 19:45:13 +1100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2oWCf3wFLfWgFIMKwdo4tZzOQXofDovD3CeLOhgNxPQafROj+jWM6O91lJtcc1sxactZVKb2P8VUelgtqRiuRw==", "user"=>{"email"=>"adminfake@outlook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adminfake@outlook.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2019-01-07 08:45:13.270810"], ["last_sign_in_at", "2019-01-06 03:20:24.470029"], ["sign_in_count", 7], ["updated_at", "2019-01-07 08:45:13.272182"], ["id", 14]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 157ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 19:45:13 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 184ms (Views: 181.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 127.0.0.1 at 2019-01-07 19:45:17 +1100
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (6.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (10.2ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 230ms (Views: 226.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 127.0.0.1 at 2019-01-07 19:45:17 +1100
+Processing by PortfoliosController#index as HTML
+Started GET "/fonts/Lato-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:45:17 +1100
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Lato-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (4.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.4ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (13.5ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (151.0ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 570ms (Views: 564.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/fonts/Lato-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:45:18 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Lato-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (12.7ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.4ms)
+Started GET "/portfolio/4" for 127.0.0.1 at 2019-01-07 19:45:20 +1100
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 4]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (343.7ms)
+Completed 500 Internal Server Error in 351ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `portfolio_item' for #<#<Class:0x007f96b9ee9150>:0x007f96c3a21050>
+Did you mean?  @portfolio_item
+               portfolio_img
+               portfolio_path
+               portfolio_url):
+    24:       <% if logged_in?(:site_admin) %>
+    25:         <div class="col-md-12">
+    26:           <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+    27:           <%= link_to "Delete Post", portfolio_path(portfolio_item), method: :delete, class: 'btn btn-warning', data: {confirm: "Are you sure?"} %>
+    28:         </div>
+    29:       <% end %>
+    30: 
+  
+app/views/portfolios/show.html.erb:27:in `_app_views_portfolios_show_html_erb___3815399054002614786_70142752001740'
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.4ms)
+Started GET "/portfolio/4" for 127.0.0.1 at 2019-01-07 19:45:43 +1100
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 4]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (2.4ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 258ms (Views: 253.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/Lato-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:45:44 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Lato-Regular.ttf"):
+Started GET "/fonts/RobotoSlab-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:45:44 +1100
+  
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/fonts/RobotoSlab-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (13.2ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (12.6ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (223.6ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (288.4ms)
+Started GET "/portfolios" for 127.0.0.1 at 2019-01-07 19:45:52 +1100
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (5.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.2ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 195ms (Views: 190.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolio/1" for 127.0.0.1 at 2019-01-07 19:45:54 +1100
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (2.6ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 188ms (Views: 183.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/portfolios/1" for 127.0.0.1 at 2019-01-07 19:45:58 +1100
+Processing by PortfoliosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KerwN9JgDnre8EnXlcYNkIRz7WrBcuxX9riUC8B0ZhkzMfj20fwHuJAo1qfi3ewSOrr+0mcn/jykSqyum00Kmg==", "id"=>"1"}
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "portfolios" WHERE "portfolios"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/portfolios
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/portfolios" for 127.0.0.1 at 2019-01-07 19:45:58 +1100
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [12 times] (5.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.0ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 191ms (Views: 187.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/fonts/Lato-Regular.ttf" for 127.0.0.1 at 2019-01-07 19:45:58 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/Lato-Regular.ttf"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [59 times] (13.0ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.7ms)
+Started DELETE "/logout" for 127.0.0.1 at 2019-01-07 19:46:06 +1100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hdVPJYS1HDg3NMfvS9TDELpTRu9q85sivL4f0YX1DXafDkfkhykV+nnsWJ88zyKSBJpVV8ymiUnuTCd03sxh9Q=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 19:46:06 +1100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 187ms (Views: 185.2ms | ActiveRecord: 0.0ms)
+
+
