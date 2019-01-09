@@ -58255,3 +58255,123 @@ puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
   Rendering /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/georgie/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (261.9ms)
+Started GET "/blogs" for 127.0.0.1 at 2019-01-09 16:06:23 +1100
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["status", 1], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered blogs/_admin_actions.html.erb (0.6ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.4ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered collection of blogs/_blog.html.erb [20 times] (37.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (41.3ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 244ms (Views: 239.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2019-01-09 16:06:23 +1100
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["status", 1], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered blogs/_admin_actions.html.erb (0.7ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.5ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered collection of blogs/_blog.html.erb [20 times] (39.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (42.7ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 252ms (Views: 248.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2019-01-09 16:06:26 +1100
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["status", 1], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered blogs/_admin_actions.html.erb (0.6ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.4ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.4ms)
+  Rendered blogs/_admin_actions.html.erb (0.4ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered collection of blogs/_blog.html.erb [20 times] (38.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (42.3ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 248ms (Views: 243.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2019-01-09 16:07:59 +1100
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = ? ORDER BY created_at DESC LIMIT ? OFFSET ?[0m  [["status", 1], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered blogs/_admin_actions.html.erb (0.7ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.4ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.3ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered blogs/_admin_actions.html.erb (0.2ms)
+  Rendered collection of blogs/_blog.html.erb [20 times] (38.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (42.5ms)
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 2772ms (Views: 2767.1ms | ActiveRecord: 0.5ms)
+
+
