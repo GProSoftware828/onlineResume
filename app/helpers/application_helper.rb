@@ -40,7 +40,7 @@ module ApplicationHelper
       },
       {
         url: portfolios_path,
-        title: '13 Diverse Code Samples'
+        title: '14 Diverse Code Samples'
       }
     ]
   end
