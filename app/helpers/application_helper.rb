@@ -32,7 +32,7 @@ module ApplicationHelper
       },
       {
         url: contact_path,
-        title: 'Contact'
+        title: 'Other Websites'
       },
       {
         url: blogs_path,
