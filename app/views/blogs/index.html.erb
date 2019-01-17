@@ -8,5 +8,6 @@
     <div class=" row <%= "sortable" if logged_in?(:site_admin) %>">
       <%= render @blogs %>
     </div>
+    <%= link_to 'Top', blogs_path %>
   </div>
 </div>

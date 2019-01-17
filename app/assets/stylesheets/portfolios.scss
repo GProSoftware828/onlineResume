@@ -88,6 +88,14 @@ footer p {
   color: white;
 }
 
+@media screen and (max-width: 640) {
+  .portfolio-container {
+    width: '88%';
+    padding-top: 30px;
+    color: white;
+  }
+}
+
 .portfolio-box{
   border : 2px solid transparent;    
   -webkit-transition : border 500ms ease-out; 
@@ -126,4 +134,10 @@ footer p {
   padding: .75rem;
   margin-left: 20%;
   border: 0;
+}
+
+.title-p {
+  color: white;
+  font-family: 'Arial';
+  text-align: center;
 }
